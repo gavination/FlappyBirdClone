@@ -20,13 +20,14 @@ public class Player : MonoBehaviour {
             GetComponent<Rigidbody2D>().AddForce(jumpStrength);
         }
 
-        //Death By Offscreen
+        /*Death By Offscreen
         Vector2 screenPosition = Camera.main.WorldToScreenPoint(transform.position);
 
         if (screenPosition.y > Screen.height || screenPosition.y < 0)
         {
             Die();
-        }	
+        }
+        */	
 	}
 
     void OnCollisionEnter2D(Collision2D collision)
